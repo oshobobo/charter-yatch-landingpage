@@ -1,0 +1,10 @@
+header, section, main, .comment, aside div{
+    border: 1px solid black;
+}
+.after:after{
+    content: "------------------------";
+    min-width: 250px;
+    position: relative;
+    left: 100px;
+    top: 1px;
+}
