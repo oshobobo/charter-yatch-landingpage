@@ -240,6 +240,10 @@ header, div.navBar, section, main, .comment, aside div{
 .imgclass{
     width:100%;
 }
+.pad{
+    margin-top: -16%;
+    margin-left: 3%;
+}
 
 
 
