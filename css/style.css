@@ -129,10 +129,7 @@ header, div.navBar, section, main, .comment, aside div{
     flex-direction: row;
     
 }
-/* .commimg{
-    height:10px;
-    padding-right:10px;
-} */
+
 .marvel{
     line-height: 0px;
 }
@@ -176,11 +173,10 @@ header, div.navBar, section, main, .comment, aside div{
     padding-top: 96px;
     padding-left: 29px;
 } 
-/* button STYLING */
+
 .btn{
     box-shadow: 0 10px 30px rgba(0,0,0,.05);
     position: relative;
-    /* background: #fff; */
     border-radius: 14px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -200,7 +196,7 @@ header, div.navBar, section, main, .comment, aside div{
 }
 
 
-/* button styling ends */
+
 .main1:hover h3{
   color: rgb(134, 76, 182);
 }
