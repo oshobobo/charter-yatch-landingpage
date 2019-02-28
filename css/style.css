@@ -1,10 +1,250 @@
-header, section, main, .comment, aside div{
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+}
+header, div.navBar, section, main, .comment, aside div{
     border: 1px solid black;
 }
-.after:after{
-    content: "------------------------";
-    min-width: 250px;
-    position: relative;
-    left: 100px;
-    top: 1px;
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgba(128,80,250,.9);
+    padding: 0.3em;
+    justify-content: space-between;
+    opacity:0.9;
 }
+ .logo{
+    width: 84px;
+    margin-left: 5px;
+    
+}
+.logo img{
+    width:100%;
+    
+}
+.icon{
+    width: 35px;
+    height: 5px;
+    background-color:#fff;
+    margin: 8px 0;
+    
+  }
+  .bar1,.bar2,.bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 0 0 5px 0;
+      
+ 
+  }
+.side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:46px;
+    left:256px;
+    right:0;
+    background-color:#111;
+    opacity:0.9;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+}
+.side-nav a{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:10px;
+    text-decoration:none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 72px;
+    font-family: playfair display,serif;
+    line-height: 13px;
+    font-weight:bold;
+    display:block;
+    transition:0.3s;
+}
+.side-nav a:hover{
+    background:#555;
+}
+.menu{
+    display: flex;
+    justify-items: center;
+    align-self: center
+    
+} 
+.menuNav{
+    list-style-type: none;
+}
+.menu a{
+    text-decoration: none;
+    color:#fff;
+    display:block;
+    text-align:center;
+}
+.menu a:hover{ 
+    background:#555;
+}
+.menu ul{
+    margin: -25px;
+    padding-left: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    flex-grow: 1;
+}
+ #swimmer{
+    width:100%;
+} 
+.firstTeen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70.5vh;
+    background: linear-gradient(0deg,rgba(128,80,250,0.8),rgba(128,80,250,0.8)),url(../images/swimmer-compressor.jpg) no-repeat center;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+.firstTeen h1{
+    text-align: center;
+    justify-items: center
+}
+.banner-title{
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: 300;
+    font-family: playfair display,serif;
+    line-height: 26px;
+    font-weight:bolder;
+}
+.commentparent{
+    display:flex;
+    flex-direction: row;
+    
+}
+/* .commimg{
+    height:10px;
+    padding-right:10px;
+} */
+.marvel{
+    line-height: 0px;
+}
+.marvel ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 70%; 
+    line-height: 10px;
+    font-size: 12px;
+}
+.marvel li a{
+    text-decoration: none;
+}
+.marvel a{
+    color:#555;
+}
+.marvel p{
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.marvel a:hover{ 
+    color:rgb(134, 76, 182);
+}
+.marvel p:hover{ 
+    color:rgb(134, 76, 182);
+}
+.commentp{
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.comment{
+    color: #777;
+    font-family: roboto,sans-serif; 
+    padding-top: 96px;
+    padding-left: 29px;
+} 
+/* button STYLING */
+.btn{
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+    position: relative;
+    /* background: #fff; */
+    border-radius: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 112px;
+    height: 36px;
+    margin-left: 3%;
+}
+
+.btn-width{
+    width: 38% !important;
+}
+
+.btn:hover, .main1:hover .btn{
+    background-color:rgb(134, 76, 182);
+    color:#fff; 
+}
+
+
+/* button styling ends */
+.main1:hover h3{
+  color: rgb(134, 76, 182);
+}
+.main1 img{
+    transition: 0.3s;
+}
+.main1:hover img{
+    transform: scale(1.1);
+}
+
+.comment ::after,::before{
+    box-sizing: border-box;
+}
+
+.commentul li a {
+    padding: 10px;
+    display: inline-block;
+}
+.main1{
+    box-sizing: border-box;
+    margin: 18% 0;
+}
+.main1img{
+    box-sizing: border-box;
+    padding: 0 3%;
+}
+.main1 h3{
+    padding: 0 3%;
+    font-family: roboto,sans-serif;
+    font-size:23px;
+    font-weight:bolder;
+}
+.main1 p{
+    padding: 0 3%;
+    color: #777;
+    font-family: roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.imgclass{
+    width:100%;
+}
+
+
+
+
